@@ -4,7 +4,6 @@
 }
 
 
-
 /* Body */ 
 body {
     font-family: 'Noto Serif', serif;
@@ -17,12 +16,21 @@ body {
     text-align: center;
 }
 
-#nl,
-#nlf {
-    padding-top: 10px 0 15px 0;
-
+#other-topics {
+    width: 100%;  
+    height: 100px;
+    border-radius: 5px;
+    background-color:#ecedee;
+    border: none;
+    font-family: Tahoma, sans-serif;
+    padding: 10px;
+    margin-top: 10px;
 }
 
+#nl,
+#nlf {
+    padding-top: 20px 0 15px 0;
+}
 
 
 h2,
@@ -30,7 +38,12 @@ h2,
 .newsl
  {
     font-size: 20px;
-    color: #222
+    color: #222;
+}
+
+.newsl,
+.contact {
+    padding-top: 15px;
 }
 
 h2 {
@@ -42,15 +55,11 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #002957;
+    background-color: #0E355C;
     color: #fff;
     font-size: 12px;
     padding: 10px 0 15px 0;
 }
-
-
-
-
 
 .the-latest {
     text-align: center;
@@ -59,26 +68,23 @@ header {
     color: #9da3a8;
     margin: auto 20px 30px;
  
-    }
+}
 
 .thin-line {
     border-top: .5px solid #000;
     margin-top: 2px;
-    width: 95%;
-    
+    width: 97%; 
 }
 
 .thick-line {
     border-top: 2px solid #000;
     margin: auto;
-    width: 95%;
+    width: 97%;
 }
 
 .bottom-thin-line {
     border-top: 2px solid #000;
-  margin: auto;
-  
-
+    margin: auto;
 }
    
 
@@ -91,7 +97,6 @@ footer {
     font-size: 12px;
     color: #9da3a8;
     padding: 0 0 15px 0;
-
 }
 
 
@@ -102,21 +107,19 @@ form {
     Margin: auto;
     text-align: left;
     width: 100%;
-  }
+}
   
   .newsletter-form {
     display:flex;
     flex-direction: column;
     margin: auto;
     align-items: center;
-    
-
 }
 
 
 
 button {
-    background-color: #0087BE;
+    background-color: #005F86;
     color: #fff;
     width: 100%;
     padding: 20px;
@@ -129,19 +132,17 @@ button {
 
 button:hover {
         Opacity: .75;
-        
-
 }
+
 fieldset {
     border: none;
 }
 
 
-
 .contact-info,
 .news {
     padding: 20px 10px 0px 10px;
-    }
+}
 
 
 #other-topics {
@@ -155,19 +156,34 @@ fieldset {
     margin-top: 10px;
 }
 
-#fullname, 
-#email {
+
+input:required {
     font-family: Tahoma, sans-serif;
-
+    text-align: right;
 }
-
 
 
 option[default] {
     display: none;
-  }
+}
 
+input[type="checkbox"] {
+    margin: 10px 15px 0px 0px;
+}
+    
+input[type="radio"] {
+    margin: 10px 15px 0px 0px;
+}
 
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+    color: #2B2C2E
+    }
+
+input[type="radio"]:checked + label {
+        font-weight: bold;
+        color: #2B2C2E
+}
 
 input[type="text"],
 input[type="tel"],
@@ -180,8 +196,6 @@ input[type="email"],
     width: 100%;
     border: none;
     margin: 5px 0 15px 0;
-
-    
 }
 
 #state {
@@ -192,18 +206,19 @@ input[type="email"],
 input:focus,
 select:focus,
 textarea:focus {
-    outline-color: #E89B26;
+    outline-color: #FFB95C;
 }
 
 input[name="zipcode"]{
     max-width: 50%;
-    align-self:flex-start;
+    align-self: fl;
 }
 
       
 input[type="submit"] {
-    background-color: #52bab3
-  }
+    background-color: #52bab3;
+    align-self:flex-start;
+}
 
 input[type=“button”],
 input[type=“submit”] {
@@ -212,10 +227,12 @@ input[type=“submit”] {
 
 
 
+
 /* Media queries */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
     form {        
   width: 50%;
+
   }
  
   input[name="zipcode"]{
@@ -223,7 +240,7 @@ input[type=“submit”] {
     align-self: baseline;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 12%;
+    margin-left: 15%;
 
 }
 
@@ -246,6 +263,7 @@ input[type=“submit”] {
  #state {
     flex-basis: 100%;
 }
+
 
 
 }
