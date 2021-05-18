@@ -5,6 +5,19 @@
 
 
 /* -------- Body -------- */ 
+
+#nl,
+#nlf {
+    background-color: #FFB95C;
+    max-width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+    
+}
+
 body {
     font-family: 'Noto Serif', serif;
     letter-spacing: 0.1px;
@@ -35,10 +48,7 @@ h2,
     color: #222;
 }
 
-.newsl,
-.contact {
-    padding-top: 15px;
-}
+
 
 h2 {
     padding: 10px 0 0 0;  
@@ -165,11 +175,13 @@ input[type="radio"] {
 }
 
 input[type="checkbox"]:checked + label {
-    color: #8e8e8e
+    color: #fff;
+    font-weight: bold;
     }
 
 input[type="radio"]:checked + label {
-    color: #8e8e8e
+    color: #fff;
+    font-weight: bold;
 }
 
 
@@ -192,7 +204,9 @@ input[type="email"],
 }
 
 
-input, select, textarea {
+input, 
+select, 
+textarea {
     transition: all 1s ease-out;
     outline-color: #ecedee;
 }
@@ -221,43 +235,34 @@ input[type="button"] {
 
 
 
-
 /* -------- Media queries -------- */
 
 @media screen and (min-width: 768px) {
-   
-   
 form {        
-   width: 60%;
+   width: 70%;
 }
- 
-input[name="zipcode"]{
-   max-width: 25%;  
-   align-self: baseline;
-}
-
-
 
 .full-width {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
 }
 
+.contact-info input,
+#state {
+    flex-grow: 1;
+    flex-basis: 40%;
+}
 
 .contact-info label {
-    margin: auto 0;
     flex-basis: 35%;
-} 
-
-.zip-code label {
-    justify-items: flex-start;
-    flex-basis: 25%;
+    height:50px;
+    margin: auto 0;
 }
 
- #state {
-    flex-basis: 100%;
+#zipcode {
+    max-width: 25%;
 }
 
+
 }
+  

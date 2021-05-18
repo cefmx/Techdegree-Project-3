@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,17 +23,17 @@
       
            <form action="index.html" method="post">
               <hr class="thick-line">
-              <hr class="thin-line"><br>
+              <hr class="thin-line">
             
               <fieldset class="contact-info">
-                  <legend class="contact">Contact Information</legend>
+                  <legend class="contact"><h2>Contact Information</h2></legend>
                   <div class="full-width">
                     <label for="fullname">Full Name</label><br>
-                    <input type="text" id="fullname" name="fullname" placeholder="Required"><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Required" required><br>
                   </div>
                   <div class="full-width">
                     <label for="email">Email Address</label><br>
-                    <input type="email" id="email" name="email" placeholder="Required"><br>
+                    <input type="email" id="email" name="email" placeholder="Required" required><br>
                   </div>
                   <div class="full-width">
                     <label for="phonenumber">Phone Number</label><br>
@@ -42,17 +41,17 @@
                   </div>
                   <div class="full-width">
                     <label for="address">Street Address</label><br>
-                    <input type="text" id="address" name="address"><br>
+                    <input type="text" id="address" name="address" placeholder="Required"><br>
                   </div>
                   <div class="full-width">
                     <label for="city">City</label><br>
-                    <input type="text" id="city" name="city" required><br>
+                    <input type="text" id="city" name="city" placeholder="Required" required><br>
                   </div>
 
                   <div class="full-width">
                   <label for="state">State</label><br>
                   <select id="state" name="your-state">
-                    <option value="" default selected>Choose State</option>
+                    <option disabled selected value="">Choose State</option>
                     <option value="alabama">Alabama</option>
                     <option value="alaska">Alaska</option>
                     <option value="arizona">Arizona</option>
@@ -105,17 +104,17 @@
                     <option value="wyoming">Wyoming</option>
                   </select>
                   </div>
-              </fieldset>
-              <fieldset class="zip-code">
+              
+             
                   <div class="full-width">
                     <label for="zipcode">Zip Code</label><br>
-                    <input type="text" id="zipcode" name="zipcode"><br>
+                    <input type="text" id="zipcode" name="zipcode" placeholder="Required"><br>
                   </div>
                   <hr class="bottom-thin-line">
               </fieldset>
 
               <fieldset class="news">
-                  <legend class="newsl">Newsletter</legend>
+                  <legend class="newsl"><h2>Newsletter</h2></legend>
                   <label>Select the newsletters you would like to receive</label><br>
                   <section id="nl">
                     <input type="checkbox" id="htmlnews" value="news_html" name="newsletter"><label class="light" for="htmlnews">HTML News</label><br>
