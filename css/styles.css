@@ -1,18 +1,18 @@
-/* Global */ 
+/* -------- Global -------- */ 
 *{
     box-sizing: border-box;
 }
 
 
-/* Body */ 
+/* -------- Body -------- */ 
 body {
     font-family: 'Noto Serif', serif;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.1px;
     margin: 0 auto;
     font-size: 16px;
     color: #9da3a8;
     background-color: #fbfbfb;
-    line-height: 1.7;
+    line-height: 1.6;
     text-align: center;
 }
 
@@ -27,16 +27,10 @@ body {
     margin-top: 10px;
 }
 
-#nl,
-#nlf {
-    padding-top: 20px 0 15px 0;
-}
-
 
 h2,
 .contact,
-.newsl
- {
+.newsl {
     font-size: 20px;
     color: #222;
 }
@@ -49,7 +43,6 @@ h2,
 h2 {
     padding: 10px 0 0 0;  
 }
-
 
 header {
     display: flex;
@@ -88,7 +81,6 @@ header {
 }
    
 
-
 footer {
     display: flex;
     align-items: center;
@@ -99,11 +91,9 @@ footer {
     padding: 0 0 15px 0;
 }
 
-
 form {
     display: flex;
     flex-direction: column;
-    align-items: left;
     Margin: auto;
     text-align: left;
     width: 100%;
@@ -115,8 +105,6 @@ form {
     margin: auto;
     align-items: center;
 }
-
-
 
 button {
     background-color: #005F86;
@@ -157,10 +145,11 @@ fieldset {
 }
 
 
-input:required {
+::placeholder {
     font-family: Tahoma, sans-serif;
     text-align: right;
 }
+
 
 
 option[default] {
@@ -176,14 +165,13 @@ input[type="radio"] {
 }
 
 input[type="checkbox"]:checked + label {
-    font-weight: bold;
-    color: #2B2C2E
+    color: #8e8e8e
     }
 
 input[type="radio"]:checked + label {
-        font-weight: bold;
-        color: #2B2C2E
+    color: #8e8e8e
 }
+
 
 input[type="text"],
 input[type="tel"],
@@ -203,6 +191,12 @@ input[type="email"],
     font-family: Tahoma, sans-serif;
 }
 
+
+input, select, textarea {
+    transition: all 1s ease-out;
+    outline-color: #ecedee;
+}
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -211,7 +205,7 @@ textarea:focus {
 
 input[name="zipcode"]{
     max-width: 50%;
-    align-self: fl;
+    align-self: flex-start;
 }
 
       
@@ -220,28 +214,26 @@ input[type="submit"] {
     align-self:flex-start;
 }
 
-input[type=“button”],
-input[type=“submit”] {
+input[type="button"] {
     cursor: pointer;
 }
 
 
 
 
-/* Media queries */
-@media screen and (min-width: 768px){
-    form {        
-  width: 50%;
 
-  }
+/* -------- Media queries -------- */
+
+@media screen and (min-width: 768px) {
+   
+   
+form {        
+   width: 60%;
+}
  
-  input[name="zipcode"]{
-    flex-basis: 25%;
-    align-self: baseline;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 15%;
-
+input[name="zipcode"]{
+   max-width: 25%;  
+   align-self: baseline;
 }
 
 
@@ -254,16 +246,18 @@ input[type=“submit”] {
 }
 
 
- .contact-info label
- {
+.contact-info label {
+    margin: auto 0;
     flex-basis: 35%;
- } 
+} 
 
+.zip-code label {
+    justify-items: flex-start;
+    flex-basis: 25%;
+}
 
  #state {
     flex-basis: 100%;
 }
-
-
 
 }
