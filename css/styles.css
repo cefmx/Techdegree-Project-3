@@ -209,12 +209,16 @@ select,
 textarea {
     transition: all 1s ease-out;
     outline-color: #ecedee;
+    
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     outline-color: #FFB95C;
+    box-shadow: none;
+   
+    
 }
 
 input[name="zipcode"]{
